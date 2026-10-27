@@ -1,11 +1,11 @@
 """PathoCell AI - Streamlit demo.  Run: streamlit run app/app.py"""
 import sys
 import os
-sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+sys.path.append(os.path.dirname(os.path.abspath(__file__)))
 
 import streamlit as st
 from PIL import Image
-from app.inference import predict
+from inference import predict
 
 st.set_page_config(page_title="PathoCell AI", page_icon="🔬", layout="wide")
 
